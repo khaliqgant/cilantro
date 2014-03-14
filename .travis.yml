@@ -7,7 +7,7 @@ virtualenv:
     system_site_packages: true
 
 before_install:
-    - sh bin/check_signoff.py
+    - sh bin/check_signoff.sh
 
 install:
     - git clone --branch demo git://github.com/cbmi/harvest-openmrs.git
