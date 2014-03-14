@@ -26,7 +26,7 @@ install:
     - npm install
 
 before_script:
-    - uwsgi --ini harvest-openmrs/server/uwsgi/local.ini --protocol http --socket 127.0.0.1:8000 --daemonize
+    - uwsgi --ini harvest-openmrs/server/uwsgi/local.ini --protocol http --socket 127.0.0.1:8000 &
 
 script:
     - grunt test --verbose
