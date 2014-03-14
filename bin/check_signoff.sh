@@ -8,7 +8,7 @@ sudo apt-get install -qq python-yaml
 git remote add upstream git://github.com/cbmi/cilantro.git
 
 UPSTREAM=master
-DIRNAME=`cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd`
+DIRNAME=$( cd "$( dirname "$0" )" && pwd )
 
 if [ "$TRAVIS_PULL_REQUEST" != false ]; then
     UPSTREAM=$TRAVIS_BRANCH;
