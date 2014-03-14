@@ -21,6 +21,7 @@ before_install:
 install:
     - git clone --branch demo git://github.com/cbmi/harvest-openmrs.git
     - pip install -r harvest-openmrs/requirements.txt
+    - pip install uwsgi
     - npm install -g grunt-cli
     - npm install
 
